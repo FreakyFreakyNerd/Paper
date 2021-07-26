@@ -14,11 +14,6 @@ index 69f385c57f3716a489781debb32b4adf1cb9383d..15ec064cb9336924e16a7c9b3f76a9b6
  
      @Override
      public void tick() {
-+        // Paper start - fix sand duping
-+        if (this.isRemoved()) {
-+            return;
-+        }
-+        // Paper end - fix sand duping
          if (this.blockState.isAir()) {
              this.discard();
          } else {
